@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="@drawable/backgroundbox"
+    tools:context=".SendOTP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="80dp"
+            android:translationX="130dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="@string/otp_verification"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="8dp"
+            android:translationY="40dp"
+            android:text="@string/we_will_send_otp_to_your_mobile"
+            android:textColor="#131313" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:text="@string/enter_mobile_number"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:translationX="20dp"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                 android:gravity="center"
+
+                android:text="@string/_91"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+             />
+
+            <EditText
+                android:id="@+id/inputmobile"
+                android:layout_width="171dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="9160734705"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+            />
+
+
+
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/GetOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/get_otp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="@drawable/backgroundbutton"        android:textStyle="bold">
+
+        </Button>
+
+
+
+
+            <ProgressBar
+                android:id="@+id/ProgessbarSend"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_gravity="center">
+
+            </ProgressBar>
+        </FrameLayout>>
+
+
+    </LinearLayout>
+
+</ScrollView>
